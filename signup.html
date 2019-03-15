@@ -1,97 +1,156 @@
 <html>
-  <head>
-    <title></title>
-    <link rel="icon" type="image/ico" href="icons/al.png" />
-  </head>
-  <body background="images/w.jpg">
-    <form name="frm1" action="signup.html" method="post">
-      <center><table width=50%>
-        <tr>
-           <td></td><td><center><h1><font face="Times new roman" size="30" color="black"> Formulario de Registro <br></font></h1></td><td></td>
-        </tr>
-        <tr>
-           <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Nombres: <br></font></td><td></td>
-          <td></td><td><center><input type="text" name="user" placeholder="Nombres" required><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Apellidos: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Apellidos" required><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Tipo identificacion: <br></font></td><td></td>
-         <td></td><td><center><select name="Identificacion">
+    <head>
+        <title>Formulario registro</title>
+        <link rel="icon" type="image/ico" href="icons/f.png" />
+<meta charset="UTF-8">
+        <form  name="formulario" method="post" action="index2.html">
+            <center>
+                <table border="1">
+                    <h3>Formulario de registro</h3>
+                    <tr>
+                        <td>
+                        <label>Nombre<font color="red">*</label>
+                        <input type="text" name="nombre" style="margin-left: 170px; width: 180px" placeholder="Ingrese Nombre" required >
+                        </td>
+                    </tr>
 
-<option>TI</option>
-<option>CC</option>
-<option>CE</option>
-<option>RC</option>
-<option>PS</option>
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Apellido<font color="red">*</label>
+                        <input type="text" name="apellido" style="margin-left:  165px; width: 180px" placeholder="Ingrese Apellido" required>
+                        </div>
+                        </td>
+                    </tr>
 
-</select><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Nro. identificacion: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Nª De Identificaion" required><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Gènero: <br></font></td><td></td>
-         <td></td><td><center><select name="Genero">
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Tipo Identificacion<font color="red">*</label>
+                        <select name="tipoId" style="margin-left: 98px; width: 184px" required>
+                            <option>Identificacion</option >
+                            <option>TI</option>
+                            <option>CC</option>
+                            <option>CE</option>
+                            <option>RC</option>
+                            <option>PS</option>
+                        </select>
+                        </div>
+                        </td>
+                    </tr>
 
-<option>Masculino</option>
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Nro Identificacion<font color="red">*</label>
+                        <input type="number" name="identificacion"  style="margin-left: 103px; width: 180px" placeholder="Ingrese Id" required>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Genero<font color="red">*</label>
+                        <select name="genero" style="margin-left: 174px; width: 184px" placeholder="Ingrese Genero"required>
+                            <option>Genero</option>
+                            <option>MASCULINO</option>
+                            <option>FEMENINO</option>
+                            <option>OTRO</option>
+                        </select>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Telefono</label>
+                        <input type="number" name="telefono"  style="margin-left: 172px; width: 180px" placeholder="Ingrese Telefono"required>
+                        </div>
+                        </td>
+                    </tr>
 
-<option>Femenino</option>
-
-<option>Otro</option>
-
-</select><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Telefono: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Nª De Telefono" required><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Celular: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Nª De Celular" required><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Dpto. de nacimiento: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Departamento" required><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Ciudad de nacimiento: <br></font></td><td></td>
-         <td></td><td><center><select name="Ciudad">
-
-<option>Pasto</option>
-
-<option>Bogota</option>
-
-<option>Cali</option>
-
-</select><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Correo electronico: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Correo electronico" required><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Contraseña: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Contraseña" required><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Confirmar contraseña: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" placeholder="Confirmar contraseña" required><br><br></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td><center><font face="Times new roman" size="5" color="#3498db"> Foto: <br></font></td><td></td>
-         <td></td><td><center><input type="text" name="user" required><br><br></td><td></td>
-        </tr>
-
-      </table></center>
-      <center><table width=50%>
-      <tr>
-         <td></td><td><center><input type="submit" value="Ingresar"></center></td><td></td>
-      </tr>
-      </table></center>
-    </form>
-  </body>
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Celular<font color="red">*</label>
+                        <input type="number" name="celular"  style="margin-left: 174px; width: 180px" placeholder="Ingrese Celular"required>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Departemento Nac<font color="red">*</label>
+                        <select name="departamento" style="margin-left: 100px; width: 185px" placeholder="Ingrese Departamento"required>
+                            <option>Departamento</option>
+                            <option>NARIÑO</option>
+                            <option>CAUCA</option>
+                            <option>AMAZONAS</option>
+                            <option>VALLE</option>
+                            <option>PUTUMAYO</option>
+                        </select>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Municipio Nac<font color="red">*</label>
+                        <select name="municipio" style="margin-left: 124px; width: 185px" placeholder="Ingrese Municipio" required>
+                            <option>Municipio</option>
+                            <option>SAN LORENZO</option>
+                            <option>UNION</option>
+                            <option>BUESACO</option>
+                            <option>TAMBO</option>
+                            <option>TAMINAGO</option>
+                            <option>BELEN</option>
+                            <option>LA HORMIGA</option>
+                            <option>EL ROSARIO</option>
+                        </select>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Correo Electronico<font color="red">*</label>
+                        <input type="email" name="correo" style="margin-left: 99px; width: 179px" placeholder="Ingrese Email"required>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Contraseña<font color="red">*</label>
+                        <input type="password" name="clave" style="margin-left: 149px; width: 179px" placeholder="Ingrese clave"required>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Confirmar Contraseña<font color="red">*</label>
+                        <input type="password" name="clave" style="margin-left: 79px; width: 178px" placeholder="Ingrese clave"required>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div>
+                        <label>Foto</label>
+                        <input type="file" name="foto"   style="margin-left:200px; width: 185px" >
+                        </div>
+                        </td>
+                    </tr>
+                    <td>
+                        <center>
+                        <div>
+                        <button>Registrarse</button>
+                    </div>
+                            </center>
+                    </td>
+                    </table>
+        </center>
+        </form>
+    </head>
 </html>
