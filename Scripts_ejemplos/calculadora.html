@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>calc.</title>
+  <link rel="icon" type="image/ico" href="c.png" />
+  </head>
+<body background="images/w.jpg">
+  <form name"frm1" action="calculadora.php" method="POST">
+    <center>
+      <h3>Calculadora Basica</h3>
+        <table border="3">
+
+      <tr>
+        <td>
+        <div>
+        <label>Digite 1er Num<font color="red">*</label>
+        <input type="number" name="num1"  style="margin-left: 103px; width: 180px" placeholder="num" required>
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+          <label>Digite 2do Num<font color="red">*</label>
+          <input type="number" name="num2"  style="margin-left: 103px; width: 180px" placeholder="num" required>
+          </div>
+          </td>
+      </tr>
+      <tr>
+          <td>
+          <div>
+          <label>Seleccione Operacion<font color="red">*</label>
+          <select name="operar" style="margin-left: 98px; width: 184px" required>
+              <option value="s">Sumar</option >
+              <option value="r">Restar</option>
+              <option value="m">Multiplicar</option>
+              <option value="d">Dividir</option>
+              <option value="p">Potencia</option>
+              <option value="rc">Raiz Cuadrada</option>
+              <option value="t">Todas Las operaciones</option>
+          </select>
+          </div>
+          </td>
+      </tr>
+      <td>
+          <center>
+          <div>
+          <input type="submit" value="calcular">
+      </div>
+              </center>
+      </td>
+    </table>
+</center>
+</form>
+  </body
+</html>
