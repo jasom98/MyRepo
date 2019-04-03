@@ -1,5 +1,5 @@
 <?php
-//Generrar lista de numeros del 1-10
+//Generar lista de numeros del 1-10
 // script con while, For y Do While
 echo "Punto Numero 1";
 echo "<br> 1";
@@ -95,9 +95,10 @@ while ($i <= 100)
 		}
 	$i++;
 }
+
 echo "</tr>";
 echo "</table>";
-
+/*
 echo "<br><br> Punto Numero 8<br>";
 echo "<table border = 3 >";
 echo "<tr>";
@@ -132,4 +133,62 @@ for ($x=1;$x<count($va);$x++){
 }
 echo "</tr>";
 echo "</table>";
+*/
+
+
+echo "<br><br> Punto Numero 8<br>";
+$t= 1;
+		$acumulador1=0;
+		$acumulador2=0;
+		echo "<br>Números: ";
+		echo "<table border = '1' cellpadding='4'><br>";
+		while($t<=10){
+			$tt=rand(1,100);
+			echo $tt."&nbsp;&nbsp;";
+			if($tt%2==0){
+				$acumulador1++;				
+			}else {
+				$acumulador2++;				
+			}
+			$t++;
+		}
+		echo "</table>";
+		echo "<table border=1>";
+		echo "<tr><td>Total de pares:</td><td>". $acumulador1 ."</td></tr>";
+		echo "<tr><td>Total de impares:</td><td>". $acumulador2 ."</td></tr>";
+		echo "</table>";
+		
+echo "<br><br> Punto Numero 9<br>";
+		$n= 1;
+		$acumulador3=0;
+		$acumulador4=0;
+		$acumulador5=0;
+		$acumulador6=0;
+		echo "<br>Números: ";
+		echo "<table border = '3' cellpadding='4'><br>";
+		while($n<=10){
+			$nn=rand(-100,100);
+			echo $nn."&nbsp;&nbsp;";
+			if($nn%2==0){
+				if($nn>=0){
+				$acumulador3++;
+				}else{
+					$acumulador5++;
+					}				
+			}else {
+				if($nn>=0){
+				$acumulador4++;
+				}else{
+					$acumulador6++;
+					}	
+			}
+			$n++;
+		}
+		echo "</table>";
+		echo "<table border=1>";
+		echo "<tr><td>Total de pares positivos:</td><td>". $acumulador3 ."</td></tr>";
+		echo "<tr><td>Total de impares positivos:</td><td>". $acumulador4 ."</td></tr>";
+		echo "<tr><td>Total de pares negativos:</td><td>". $acumulador5 ."</td></tr>";
+		echo "<tr><td>Total de impares negativos:</td><td>". $acumulador6 ."</td></tr>";
+		echo "</table>";
 ?>
